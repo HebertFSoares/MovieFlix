@@ -1,12 +1,6 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/vercel.php"
-    }
-  ],
   "functions": {
-    "vercel.php": {
+    "api/*.php": {
       "runtime": "vercel-php@0.6.0"
     }
   }
