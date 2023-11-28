@@ -1,7 +1,4 @@
 {
-  "functions": {
-    "*.php": {
-      "runtime": "vercel-php@0.6.0"
-    }
-  }
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.php" }],
+  "functions": { "/index.php": { "runtime": "vercel-php@0.6.0" } }
 }
