@@ -1,6 +1,6 @@
 # MovieFlix
 
-<img src="image_projeto.png" alt="Exemplo imagem">
+<img src="img/image_projeto.png" alt="Exemplo imagem">
 
 
 ## 💻 Pré-requisitos
