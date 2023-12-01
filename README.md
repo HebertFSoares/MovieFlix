@@ -10,6 +10,8 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 - Você instalou a versão mais recente de `PHP / MYSQL / XAMPP`
 - Você tem uma máquina `<Windows / Linux / Mac>`.
 - Verifique seu arquivo `php.ini` é ative o comando `extension=gd`.
+  
+  - Caminho para o arquivo `php.ini` => `xampp\php\php.ini`.
 
 ## 🚀 Instalando MovieFlix
 
