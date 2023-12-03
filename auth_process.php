@@ -9,11 +9,8 @@
   $message = new Message($BASE_URL);
   $userDAO = new UserDAO($conn, $BASE_URL);
   
-  // redeem form type
-  
   $type = filter_input(INPUT_POST, "type");
   
-  // check form type
   
   if ($type === "register") {
   
@@ -23,15 +20,13 @@
     $password = filter_input(INPUT_POST, "password");
     $confirmpassword = filter_input(INPUT_POST, "confirmpassword");
     
-    // minimum data check
     if ($name && $lastname && $password) {
       
       if($password == $confirmpassword) {
         
         if($userDAO->findByEmail($email) === false) {
           $user = new User();
-          
-          // create token and password
+  
           $userToken = $user->generateToken();
           $finalPassword = $user->generatePassword($password);
           
@@ -53,7 +48,6 @@
       }
     
     } else {
-      // msg error
       $message->setMessage("Por favor, preencha todos os campos.", "error", "back");
     }
 

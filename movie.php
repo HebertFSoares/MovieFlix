@@ -28,7 +28,6 @@
     $movie->image = "mover_cover.jpg";
   }
   
-  // check if the movie is from the user
   $userOwnsMovie = false;
 
   if(!empty($userData)) {
