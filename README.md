@@ -33,7 +33,7 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 ## 🤝 Desenvolvedor
 
-Projeto desenvolvidor para cadeira da faculdade Desenvolvimento Web
+Projeto desenvolvido para cadeira da faculdade Desenvolvimento Web
 
 <table>
   <tr>
