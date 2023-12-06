@@ -22,7 +22,7 @@
       $reviewObject = new Review();
 
       $reviewObject->id = $data["id"];
-      $reviewObject->rating = $data["rating"];
+      $reviewObject->rating = $data["reting"];
       $reviewObject->review = $data["review"];
       $reviewObject->users_id = $data["users_id"];
       $reviewObject->movies_id = $data["movies_id"];
@@ -34,12 +34,12 @@
     public function create(Review $review) {
 
       $stmt = $this->conn->prepare("INSERT INTO reviews (
-        rating, review, movies_id, users_id
+        reting, review, movies_id, users_id
       ) VALUES (
-        :rating, :review, :movies_id, :users_id
+        :reting, :review, :movies_id, :users_id
       )");
 
-      $stmt->bindParam(":rating", $review->rating);
+      $stmt->bindParam(":reting", $review->rating);
       $stmt->bindParam(":review", $review->review);
       $stmt->bindParam(":movies_id", $review->movies_id);
       $stmt->bindParam(":users_id", $review->users_id);
@@ -115,7 +115,7 @@
         $reviews = $stmt->fetchAll();
 
         foreach($reviews as $review) {
-          $rating += $review["rating"];
+          $rating += $review["reting"];
         }
 
         $rating = $rating / count($reviews);
